@@ -37,7 +37,23 @@ cout<<hour<<":"<<mintute<<"\n";
 
 }
 
-
+main(){
+    myTime open ,close ,now;
+	int h, m;
+	open.setTime(10,30);
+	close.setTime(17,30);
+	now.setTime(14,15);
+	cout<<"開放時間:";
+	open.printTime();
+	cout<<"結束時間:";
+	close.printTime();
+	cout<<"現在時間:";
+	h=now.getHour();
+	m=now.getMinute();
+	cout<<h<<":"<<m<<"\n";
+	
+}
+	
 
 
 
